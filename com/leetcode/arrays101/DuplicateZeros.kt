@@ -1,5 +1,7 @@
 package com.leetcode.arrays101
 
+// Link to the issue: https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3245/
+
 fun main() {
     val arr = arrayListOf(
         1,  //0
@@ -47,7 +49,7 @@ fun IntArray.duplicateZeros(
     oldArrayIndex: Int,
     newArrayIndex: Int
 ) {
-    if (rangeIndex in rangeSize.asIndex.previousIndex .. rangeSize.asIndex) {
+    if (rangeIndex in rangeSize.asIndex.previousIndex..rangeSize.asIndex) {
         this[newArrayIndex] = 0
     } else {
         this[newArrayIndex] = this[oldArrayIndex]
